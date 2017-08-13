@@ -1,0 +1,85 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\input{top.tex}
+\begin{document}
+\input{me.tex}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{%{GIMP (Photoshop)/1.5/4},
+{WinAPI/3.3/5},{Android/2.1/2},{Linux (Bash)/1.9/10},{JavaScript/2.8/5},{C\#/1.0/1},{C++/1.9/4},{Python/2.5/2},{Java/3.2/4},{C/5.6/10}}
+
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+\input{education.tex}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Tools Development Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2015-2016}{Winter Novel localization tool}{\href{http://store.steampowered.com/app/485350}{http://store.steampowered.com/app/485350} }{
+Winter novel is a visual novel ASCII game, written in low-level C. The game available in Russian, English, Portuguese, Polish, Ukrainian and Japanese languages. The localization tool automatically collects all string literals, prepares it for automatical translation and voice acting. Also, it taking care of international differences (japaneese kanjis for 2-symbol space for example).}
+
+
+	\twentyitem{2015}{dxPmdxConverter}{ \href{https://github.com/DeXP/dxPmdxConverter}{https://github.com/DeXP/dxPmdxConverter} }{
+PMD is a 3D-file format from MikuMikuDance program. OBJ is a commonly used format. Maximum conversation performance was a goal. File into memory mapping was used to speed-up IO-operations.
+}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{Other Experience}
+
+\begin{twenty}
+\twentyitem{2014-2017}{Game Developer}{ \href{http://store.steampowered.com/search/?developer=DeXP}{http://store.steampowered.com/search/?developer=DeXP} }{
+Steam games: One Manga Day, Winter Novel, Wordlase.
+
+Technologies: Python, C, RenPy, JSON, XML, gzip, PNG, OGG, libc, SDL, WinAPI, Linux, Mac OS X, steamworks.
+}
+
+\twentyitem{2012-2017}{Teacher at Gomel State Technical University}{ \href{https://www.gstu.by}{https://www.gstu.by} }{
+Assistance in the following courses: Lisp, AI, Algorithmization, Object-oriented programming, Java, CAD-systems, Databases, Operation systems, Networks, Cloud computing.
+
+Teaching at University's Android game development course.}
+
+\twentyitem{2012-2014}{Hardware developer}{ \href{https://www.gstu.by}{https://www.gstu.by} }{
+Working directly with flash memory, USB protocol, Pic8 controllers, STM ARM controllers, Xilinx FPGA. The same code worked on Linux, Windows and Pic-controller. Technologies: C, C++, VHDL, Qt.
+}
+
+\twentyitem{2009-2012}{PHP developer}{ \href{https://www.livemaster.ru}{https://www.livemaster.ru} }{
+Both front-end and back-end. Main technologies: PHP, MySQL, JavaScript, AJAX, HTML, CSS, memcached, Linux.
+}
+
+\end{twenty}
+\input{links.tex}
+\end{document} 

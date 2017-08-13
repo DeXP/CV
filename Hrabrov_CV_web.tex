@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\input{top.tex}
+\begin{document}
+\input{me.tex}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+%\skills{{GIMP (Photoshop)/1.5/4}, {WinAPI/3.3/5},{Android/2.1/2},{Linux (Bash)/1.9/10},{JavaScript/2.8/5},{C\#/1.0/1},{C++/1.9/4},{Python/2.5/2},{Java/3.2/4},{C/5.6/10}}
+\skills{{Linux/5.0},{JQuery,Prototype.js/1.9},{XML/0.8},{CSS,SASS/2.8},{HTML/3.8},{MySQL/2.7},{C,C++,CGI/2.0},{Java/3.0},{JavaScript/4.0},{PHP/5.6}}
+
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+\input{education.tex}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Web Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+
+	\twentyitem{2014-2015}{Web developer}{ \href{http://onemangaday.dexp.in}{http://onemangaday.dexp.in} }{
+The website for One Manga Day game. 
+
+Technologies: Git, Jekyll, SASS, HTML5, CSS3, JavaScript.
+
+{\small Site and game sources: \href{https://github.com/DeXP/onemangaday}{https://github.com/DeXP/onemangaday} }
+}
+
+	\twentyitem{2009-2012}{PHP developer}{ \href{https://livemaster.ru}{https://livemaster.ru} }{
+Both front-end and back-end. Implementation of help-system with administration/moderation interface. AJAX picture uploading with image crop. Prototype.js patch for local bugs. Pixel-perfect HTML and CSS layout. Written PHP and JavaScript code lines: $\sim$10k.
+
+Technologies: PHP, MySQL, JavaScript, AJAX, Prototype.js, HTML, CSS, memcached.
+}
+
+	\twentyitem{2005-2011}{Web developer}{ \href{http://dexperix.net}{http://dexperix.net} }{
+Old personal website. The engine is self-made, written in C++. Info stored in MySQL, with LaTeX-like syntaxis.
+
+Used technologies: C++, MySQL, LaTeX, HTML, CSS.
+}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{Other Experience}
+
+\begin{twenty}
+\twentyitem{2014-2017}{Game Developer}{ \href{http://store.steampowered.com/search/?developer=DeXP}{http://store.steampowered.com/search/?developer=DeXP} }{
+Steam games: One Manga Day, Winter Novel, Wordlase.
+
+Technologies: Python, C, RenPy, JSON, XML, gzip, PNG, OGG, libc, SDL, WinAPI, Linux, Mac OS X, steamworks.
+}
+
+\twentyitem{2012-2017}{Teacher at Gomel State Technical University}{ \href{https://www.gstu.by}{https://www.gstu.by} }{
+Assistance in the following courses: Lisp, AI, Algorithmization, Object-oriented programming, Java, CAD-systems, Databases, Operation systems, Networks, Cloud computing.
+
+Teaching at University's Android game development course.}
+
+\twentyitem{2012-2014}{Hardware developer}{ \href{https://www.gstu.by}{https://www.gstu.by} }{
+Working directly with flash memory, USB protocol, Pic8 controllers, STM ARM controllers, Xilinx FPGA. The same code worked on Linux, Windows and Pic-controller. Technologies: C, C++, VHDL, Qt.
+}
+\end{twenty}
+\input{links.tex}
+\end{document} 
