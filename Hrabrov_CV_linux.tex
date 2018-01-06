@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\input{top.tex}
+\begin{document}
+\input{me.tex}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{%{GIMP (Photoshop)/1.5/4},
+{WinAPI/3.3/5},{Android/2.1/2},{JavaScript/2.8/5},{C\#/1.5/1},{C++/1.9/4},{Python/2.5/2},{Java/3.2/4},{Linux/4.1/10},{C/5.6/10}}
+
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+\input{education.tex}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Code samples / Tools}
+
+\begin{twenty}
+	\twentyitem{2017}{dxTarRead}{\href{https://dexp.in/tools/dxtarread/}{https://dexp.in/tools/dxtarread/}}{
+A minimalistic non compressed archive file readers written in ANSI C. Supported formats: GNU tar, PAX, GNU ar, Cpio (4 variants).}
+
+\twentyitem{2015}{dxPmdxConverter}{\href{https://github.com/DeXP/dxPmdxConverter}{https://github.com/DeXP/dxPmdxConverter}}{
+Simple PMD/PMX to MQO/OBJ converter written in ANSI C. Console version exists for: Linux, Mac OS X, Windows; both 32 and 64 bit.}
+\end{twenty}
+
+
+
+\section{Open source contributions}
+
+\begin{twenty}
+	\twentyitem{2016-2017}{Nuklear}{\href{https://github.com/vurtun/nuklear/commits?author=DeXP}{https://github.com/vurtun/nuklear/commits?author=DeXP}}{
+A single-header ANSI C gui library. My changes are mostly related to examples: adding new ones, adding new functionality to existent. 
+%Some improvements: adding ability to load images to GDI+ and X11 backend, adding support of OpenGL ES 2.0 and Emscripten.
+
+Used technologies: ansi C, OpenGL, OpenGL ES, SDL, GLFW, X11, GDI+, WinAPI, Emscripten, Linux, Windows, Raspberry Pi}
+
+\twentyitem{2016}{Tiled}{\href{https://github.com/bjorn/tiled/pull/1357}{https://github.com/bjorn/tiled/pull/1357}}{
+A generic tile map editor. I added an ability to convert property type. Used technologies: C++, Qt, Linux, Windows.}
+\end{twenty}
+
+
+
+\section{Game Development Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2016-2017}{Wordlase}{\href{http://store.steampowered.com/app/602930}{http://store.steampowered.com/app/602930}}{
+A word puzzle game, written in C. Game runs on Windows and Linux.
+
+Used technologies: ansi C, libc, Nuklear, JSON, gzip, Python, SDL.
+
+C code lines: $\sim$5k. Python code lines: $\sim$1k.
+
+{\small Open source part - Nuklear+: \href{https://dexp.in/tools/nuklear-cross/}{https://dexp.in/tools/nuklear-cross/} }}
+
+
+	\twentyitem{2015-2016}{Winter Novel}{\href{http://store.steampowered.com/app/485350}{http://store.steampowered.com/app/485350} }{
+A visual novel ASCII game, written in low-level C. Windows, Linux.
+		
+A lot of functions were reimplemented. Used technologies: ansi C, no libc, WinAPI/SDL, OpenGL, Android. Strict Ansi C89.
+
+Project size: $\sim$20k source code lines.}
+
+
+%	\twentyitem{2014-2015}{One Manga Day}{\href{http://store.steampowered.com/app/365070}{http://store.steampowered.com/app/365070}}{
+%A short visual novel originally written in Russian. The game is written in Python (RenPy engine). Music is self-made in Magix Music Maker. Graphics is made in Manga Maker Comipo.
+%	
+%{\small Source code: \href{https://github.com/DeXP/onemangaday}{https://github.com/DeXP/onemangaday}} }
+\end{twenty}
+
+
+\input{links.tex}
+\end{document} 
